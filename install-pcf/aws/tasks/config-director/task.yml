@@ -24,5 +24,6 @@ params:
   services_subnet_reserved_ranges_z2:
   services_subnet_reserved_ranges_z3:
   infra_subnet_reserved_ranges_z1:
+  internal_dns:
 run:
   path: pcf-pipelines/install-pcf/aws/tasks/config-director/task.sh

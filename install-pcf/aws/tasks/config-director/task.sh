@@ -84,7 +84,7 @@ read -r -d '' networks_configuration <<EOF
           "iaas_identifier": "$ert_subnet_id_az1",
           "cidr": "$ert_subnet_cidr_az1",
           "reserved_ip_ranges": "$ert_subnet_reserved_ranges_z1",
-          "dns": "$dns",
+          "dns": "$internal_dns, $dns",
           "gateway": "$ert_subnet_gw_az1",
           "availability_zones": ["$az1"]
         },
@@ -92,7 +92,7 @@ read -r -d '' networks_configuration <<EOF
           "iaas_identifier": "$ert_subnet_id_az2",
           "cidr": "$ert_subnet_cidr_az2",
           "reserved_ip_ranges": "$ert_subnet_reserved_ranges_z2",
-          "dns": "$dns",
+          "dns": "$internal_dns, $dns",
           "gateway": "$ert_subnet_gw_az2",
           "availability_zones": ["$az2"]
         },
@@ -100,7 +100,7 @@ read -r -d '' networks_configuration <<EOF
           "iaas_identifier": "$ert_subnet_id_az3",
           "cidr": "$ert_subnet_cidr_az3",
           "reserved_ip_ranges": "$ert_subnet_reserved_ranges_z3",
-          "dns": "$dns",
+          "dns": "$internal_dns, $dns",
           "gateway": "$ert_subnet_gw_az3",
           "availability_zones": ["$az3"]
         }
@@ -114,7 +114,7 @@ read -r -d '' networks_configuration <<EOF
           "iaas_identifier": "$infra_subnet_id_az1",
           "cidr": "$infra_subnet_cidr_az1",
           "reserved_ip_ranges": "$infra_subnet_reserved_ranges_z1",
-          "dns": "$dns",
+          "dns": "$internal_dns, $dns",
           "gateway": "$infra_subnet_gw_az1",
           "availability_zones": ["$az1"]
         }
@@ -128,7 +128,7 @@ read -r -d '' networks_configuration <<EOF
           "iaas_identifier": "$services_subnet_id_az1",
           "cidr": "$services_subnet_cidr_az1",
           "reserved_ip_ranges": "$services_subnet_reserved_ranges_z1",
-          "dns": "$dns",
+          "dns": "$internal_dns, $dns",
           "gateway": "$services_subnet_gw_az1",
           "availability_zones": ["$az1"]
         },
@@ -136,7 +136,7 @@ read -r -d '' networks_configuration <<EOF
           "iaas_identifier": "$services_subnet_id_az2",
           "cidr": "$services_subnet_cidr_az2",
           "reserved_ip_ranges": "$services_subnet_reserved_ranges_z2",
-          "dns": "$dns",
+          "dns": "$internal_dns, $dns",
           "gateway": "$services_subnet_gw_az2",
           "availability_zones": ["$az2"]
         },
@@ -144,7 +144,7 @@ read -r -d '' networks_configuration <<EOF
           "iaas_identifier": "$services_subnet_id_az3",
           "cidr": "$services_subnet_cidr_az3",
           "reserved_ip_ranges": "$services_subnet_reserved_ranges_z3",
-          "dns": "$dns",
+          "dns": "$internal_dns, $dns",
           "gateway": "$services_subnet_gw_az3",
           "availability_zones": ["$az3"]
         }
