@@ -67,8 +67,16 @@ output "services_subnet_cidr_az1" {
     value = "${var.services_subnet_cidr_az1}"
 }
 
+output "od_services_subnet_cidr_az1" {
+    value = "${var.od_services_subnet_cidr_az1}"
+}
+
 output "services_subnet_gw_az1" {
     value = "${cidrhost("${var.services_subnet_cidr_az1}", 1)}"
+}
+
+output "od_services_subnet_gw_az1" {
+    value = "${cidrhost("${var.od_services_subnet_cidr_az1}", 1)}"
 }
 
 output "public_subnet_id_az1" {
@@ -82,6 +90,9 @@ output "rds_subnet_id_az1" {
 }
 output "services_subnet_id_az1" {
     value = "${aws_subnet.PcfVpcServicesSubnet_az1.id}"
+}
+output "od_services_subnet_id_az1" {
+    value = "${aws_subnet.PcfVpcOdServicesSubnet_az1.id}"
 }
 output "infra_subnet_id_az1" {
     value = "${aws_subnet.PcfVpcInfraSubnet_az1.id}"
@@ -112,8 +123,14 @@ output "rds_subnet_cidr_az2" {
 output "services_subnet_cidr_az2" {
     value = "${var.services_subnet_cidr_az2}"
 }
+output "od_services_subnet_cidr_az2" {
+    value = "${var.od_services_subnet_cidr_az2}"
+}
 output "services_subnet_gw_az2" {
     value = "${cidrhost("${var.services_subnet_cidr_az2}", 1)}"
+}
+output "od_services_subnet_gw_az2" {
+    value = "${cidrhost("${var.od_services_subnet_cidr_az2}", 1)}"
 }
 output "public_subnet_id_az2" {
     value = "${aws_subnet.PcfVpcPublicSubnet_az2.id}"
@@ -126,6 +143,9 @@ output "rds_subnet_id_az2" {
 }
 output "services_subnet_id_az2" {
     value = "${aws_subnet.PcfVpcServicesSubnet_az2.id}"
+}
+output "od_services_subnet_id_az2" {
+    value = "${aws_subnet.PcfVpcOdServicesSubnet_az2.id}"
 }
 
 #AZ3
@@ -147,12 +167,18 @@ output "rds_subnet_cidr_az3" {
 output "services_subnet_cidr_az3" {
     value = "${var.services_subnet_cidr_az3}"
 }
+output "od_services_subnet_cidr_az3" {
+    value = "${var.od_services_subnet_cidr_az3}"
+}
 
 output "public_subnet_id_az3" {
     value = "${aws_subnet.PcfVpcPublicSubnet_az3.id}"
 }
 output "services_subnet_gw_az3" {
     value = "${cidrhost("${var.services_subnet_cidr_az3}", 1)}"
+}
+output "od_services_subnet_gw_az3" {
+    value = "${cidrhost("${var.od_services_subnet_cidr_az3}", 1)}"
 }
 output "ert_subnet_id_az3" {
     value = "${aws_subnet.PcfVpcErtSubnet_az3.id}"
@@ -162,6 +188,9 @@ output "rds_subnet_id_az3" {
 }
 output "services_subnet_id_az3" {
     value = "${aws_subnet.PcfVpcServicesSubnet_az3.id}"
+}
+output "od_services_subnet_id_az3" {
+    value = "${aws_subnet.PcfVpcOdServicesSubnet_az3.id}"
 }
 
 # RDS info

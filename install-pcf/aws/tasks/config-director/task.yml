@@ -23,6 +23,9 @@ params:
   services_subnet_reserved_ranges_z1:
   services_subnet_reserved_ranges_z2:
   services_subnet_reserved_ranges_z3:
+  od_services_subnet_reserved_ranges_z1:
+  od_services_subnet_reserved_ranges_z2:
+  od_services_subnet_reserved_ranges_z3:
   infra_subnet_reserved_ranges_z1:
   internal_dns:
 run:
