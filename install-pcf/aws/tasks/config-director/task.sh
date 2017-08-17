@@ -151,7 +151,7 @@ read -r -d '' networks_configuration <<EOF
       ]
     },
     {
-      "name": "od_services",
+      "name": "od-services",
       "service_network": true,
       "subnets": [
         {
